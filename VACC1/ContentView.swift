@@ -30,7 +30,7 @@ struct ContentView: View {
                 NavigationLink(
                     destination: vaccOpportunities(),
                     label:
-                        { Text("Opportunities")
+                        { Text("Vaccinated Opportunities")
         })
                 
     }
