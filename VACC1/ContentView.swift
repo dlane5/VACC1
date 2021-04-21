@@ -9,11 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Image("VACC2")
+                NavigationLink(
+                    destination: eligibility(),
+                    label:
+                        { Text("Eligibility and Vaccine Information ")
+        })
+                NavigationLink(
+                    destination: locationApp(),
+                    label:
+                        { Text("Locations and Appointments")
+        })
+                NavigationLink(
+                    destination: updates(),
+                    label:
+                        { Text("Updates")
+        })
+                NavigationLink(
+                    destination: vaccOpportunities(),
+                    label:
+                        { Text("Vaccinated Opportunities")
+        })
+                
     }
 }
-
+    }
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
