@@ -9,7 +9,7 @@ import SwiftUI
 
 struct updates: View {
     var body: some View {
-        Text("Updates")
+        Text("Vaccine Updates")
     }
 }
 
