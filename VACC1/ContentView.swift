@@ -10,35 +10,56 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Image("VACC2")
+            VStack (spacing:3) {
+              Image("VACC2").edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .padding()
+                
+        
+                        Image(systemName: "bandage")
+                        .font(.system(size: 25))
                 NavigationLink(
                     destination: eligibility(),
                     label:
-                        { Text("Eligibility and Vaccine Information ")
-        })
+                        { Text("Eligibility and Vaccine Information")
+                            
+                        })
+                
+                Image(systemName: "mappin")
+                    .font(.system(size: 25))
                 NavigationLink(
                     destination: locationApp(),
                     label:
-                        { Text("Locations and Appointments")
-        })
+                        { Text("Locations and Appointments").minimumScaleFactor(1.0)
+                            
+                        })
+                
+                
+                Image(systemName:"exclamationmark.circle")
+                    .font(.system(size: 25))
                 NavigationLink(
                     destination: updates(),
                     label:
                         { Text("Updates")
-        })
+                        })
+                Image(systemName:"globe")
+                    .font(.system(size: 25))
                 NavigationLink(
                     destination: vaccOpportunities(),
                     label:
                         { Text("Vaccinated Opportunities")
-        })
-                
+                        })
+            }
+            
+            
+            
+        }
     }
 }
-    }
-}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        ContentView()
+            .environment(\.locale, Locale(identifier:"es"))
     }
 }
