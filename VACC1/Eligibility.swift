@@ -11,20 +11,31 @@ struct eligibility: View {
     var body: some View {
         VStack{
             HStack {
-               Image(systemName: "person.3.fill")
+                Image(systemName: "person.3.fill")
+                    .padding(10.0)
+                
                 ZStack{
+                    Image("header")
                     Text("Eligibity and Vaccine Information")
+                        .foregroundColor(.white).bold()
                 }
+                
+                
             }
-          
-        
-            
+           
+            VStack {
             HStack {
-               Image(systemName: "bandage")
+                Image(systemName: "bandage")
+                    .padding(.horizontal)
                 ZStack {
+                    Image("header")
                     Text("Vaccine Information")
+                        .foregroundColor(.white).bold()
                     
-    
+                        
+            
+                    
+                }
                 }
             }
         }
