@@ -17,21 +17,25 @@ struct eligibility: View {
                 }
             }
           
-            
-            
         
-                
-                
+            
+            HStack {
+               Image(systemName: "bandage")
+                ZStack {
+                    Text("Vaccine Information")
+                    
+    
                 }
             }
         }
     
         
-    
-
+    }
+    }
 
 struct Eligibility_Previews: PreviewProvider {
     static var previews: some View {
         eligibility()
     }
 }
+
