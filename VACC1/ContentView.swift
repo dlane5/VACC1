@@ -18,7 +18,7 @@ struct ContentView: View {
                         Image(systemName: "bandage")
                         .font(.system(size: 25))
                 NavigationLink(
-                    destination: eligibility(),
+                    destination: Eligibility(),
                     label:
                         { Text("Eligibility and Vaccine Information")
                             

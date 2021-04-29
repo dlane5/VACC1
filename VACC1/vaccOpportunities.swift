@@ -9,7 +9,10 @@ import SwiftUI
 
 struct vaccOpportunities: View {
     var body: some View {
+        
+        
         NavigationView {
+            
             VStack {
                 NavigationLink(
                     destination: travel(),
