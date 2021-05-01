@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppDevWithSwiftLibrary
 
 struct ContentView: View {
     var body: some View {
@@ -16,7 +17,7 @@ struct ContentView: View {
                 
         
                         Image(systemName: "bandage")
-                        .font(.system(size: 25))
+                        .font(.system(size: 50))
                 NavigationLink(
                     destination: Eligibility(),
                     label:
@@ -25,7 +26,7 @@ struct ContentView: View {
                         })
                 
                 Image(systemName: "mappin")
-                    .font(.system(size: 25))
+                    .font(.system(size: 50))
                 NavigationLink(
                     destination: locationApp(),
                     label:
@@ -35,14 +36,14 @@ struct ContentView: View {
                 
                 
                 Image(systemName:"exclamationmark.circle")
-                    .font(.system(size: 25))
+                    .font(.system(size: 50))
                 NavigationLink(
                     destination: updates(),
                     label:
                         { Text("Updates")
                         })
                 Image(systemName:"globe")
-                    .font(.system(size: 25))
+                    .font(.system(size: 50))
                 NavigationLink(
                     destination: vaccOpportunities(),
                     label:

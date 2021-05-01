@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import AppDevWithSwiftLibrary
 
 
+
+struct Eligibility: View {
+    @Environment(\.openURL) var openURL
     
-
-    struct Eligibility: View {
-        
+    
     var body: some View {
         VStack{
             HStack {
@@ -26,42 +28,54 @@ import SwiftUI
                 
                 
             }
-           
+            
             
             VStack {
                 
-            HStack {
-                Image(systemName: "bandage")
-                    .padding(.horizontal)
-               
-                ZStack {
-                    Image("header")
-                    Text("Vaccine Information")
-                        .foregroundColor(.white).bold()
-                    Spacer()
-                }
+                HStack {
+                    Image(systemName: "bandage")
+                        .padding(.horizontal)
                     
-                
+                    ZStack {
+                        Image("header")
+                        Text("Vaccine Information")
+                            .foregroundColor(.white).bold()
+                        Spacer()
+                    }
+                    
+                    
                 }
                 VStack {
+                    Button("Johnson and Johnson") {
+                        openURL(URL(string: "https://www.apple.com")!)
                     
-                    Text("Johnson and Johnson").onTapGesture {
-                        UIApplication.shared.open(URL(string: "https://www.abcya.com")!)
                     }
-                   
-                    Text("Pfizer")
-                    Text("Moderna")
-                        
-                        
-            
-                    }
-                }
+                    Text("1 shot")
                 }
             }
-        }
-    
+                    Button("Moderns") {
+                openURL(URL(string: "https://www.apple.com")!)
+                        
+            }
+                Text("28 days between 2 shots")
+                Button("Pfizer") {
+                openURL(URL(string: "https://www.apple.com")!)
+            }
+            Text("21 days between 2 shots")
+            
+            
+            
         
+            
+        }
+    }
     
+    
+}
+
+
+
+
 
 
 struct Eligibility_Previews: PreviewProvider {
