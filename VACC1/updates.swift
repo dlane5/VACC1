@@ -18,6 +18,7 @@ struct updates: View {
                     Image("header")
                     Text("Updates")
                         .foregroundColor(.white).bold()
+                    
                 }
             }
             .padding(.bottom)
@@ -35,13 +36,15 @@ struct updates: View {
                     .frame(width: 50, height: 80, alignment: .topTrailing)
                 
                 Text("Update 4/21/21")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.leading)
                     .lineLimit(1)
-                    .padding(.trailing)
-                    .foregroundColor (.black)
-                    .font(.title2)
-               
-                VStack{
+                    .padding()
+                    
+            }
+               VStack{
                     
                 Text("Johnson and Johnson Vaccine Approved for Use")
                      .padding(.trailing)
@@ -50,11 +53,15 @@ struct updates: View {
                 
                     
             }
-            .padding(.leading, 100)
+            .padding(.leading, 50)
             .padding(.all,25.0)
-            .border(Color.gray)
+            
             .background(RoundedRectangle(cornerRadius: /*@PLACEHOLDER=Corner Radius@*/10.0))
             .foregroundColor(Color(red: 0.649, green: 0.807, blue: 0.883))
+            
+            
+            
+            
             HStack {
                 Circle()
                     .foregroundColor(.red)
@@ -107,7 +114,7 @@ struct updates: View {
 
 
 
-    }
+    
 
 struct updates_Previews: PreviewProvider {
     static var previews: some View {

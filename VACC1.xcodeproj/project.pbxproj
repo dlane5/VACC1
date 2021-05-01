@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3733ABB263E144000046E98 /* AppWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3733ABA263E144000046E98 /* AppWebView.swift */; };
 		C3AB591C26306F8E006296C0 /* VACC1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AB591B26306F8E006296C0 /* VACC1App.swift */; };
 		C3AB591E26306F8E006296C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AB591D26306F8E006296C0 /* ContentView.swift */; };
 		C3AB592026306F8F006296C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AB591F26306F8F006296C0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3733ABA263E144000046E98 /* AppWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebView.swift; sourceTree = "<group>"; };
 		C3AB591826306F8E006296C0 /* VACC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VACC1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AB591B26306F8E006296C0 /* VACC1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VACC1App.swift; sourceTree = "<group>"; };
 		C3AB591D26306F8E006296C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 1; wrapsLines = 0; };
@@ -74,6 +76,7 @@
 				C3AB592F2630727B006296C0 /* locationApp.swift */,
 				C3AB593526307312006296C0 /* updates.swift */,
 				C3AB593226307306006296C0 /* vaccOpportunities.swift */,
+				C3733ABA263E144000046E98 /* AppWebView.swift */,
 				C3AB59392630731C006296C0 /* travel.swift */,
 				C3AB591F26306F8F006296C0 /* Assets.xcassets */,
 				C3AB592426306F8F006296C0 /* Info.plist */,
@@ -173,6 +176,7 @@
 				C3AB592D263071F5006296C0 /* Eligibility.swift in Sources */,
 				C3AB591E26306F8E006296C0 /* ContentView.swift in Sources */,
 				C3AB593326307306006296C0 /* vaccOpportunities.swift in Sources */,
+				C3733ABB263E144000046E98 /* AppWebView.swift in Sources */,
 				C3AB59302630727B006296C0 /* locationApp.swift in Sources */,
 				C3AB591C26306F8E006296C0 /* VACC1App.swift in Sources */,
 			);

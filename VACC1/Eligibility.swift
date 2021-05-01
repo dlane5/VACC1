@@ -11,7 +11,12 @@ import AppDevWithSwiftLibrary
 
 
 struct Eligibility: View {
-    @Environment(\.openURL) var openURL
+    struct AppWebView: View {
+        var url: URL!
+        var body: some View {
+            SwiftUIWebView(url: url)
+        }
+    }
     
     
     var body: some View {
@@ -40,47 +45,57 @@ struct Eligibility: View {
                         Image("header")
                         Text("Vaccine Information")
                             .foregroundColor(.white).bold()
-                        Spacer()
+                    
                     }
                     
                     
                 }
+                
                 VStack {
-                    Button("Johnson and Johnson") {
-                        openURL(URL(string: "https://www.apple.com")!)
-                    
+                    NavigationView {
+                        VStack {
+                            
+                            NavigationLink(
+                                destination: AppWebView(url: URL(string:"https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/JJUpdate.html")!),
+                                label: {
+                                    Text("Johnson and Johnson")
+                                }).padding()
+                            
+                            NavigationLink(  destination: AppWebView(url: URL(string:"https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html")!),
+                                             label: {
+                                                Text("Moderna")
+                                             }).padding()
+                            NavigationLink(  destination: AppWebView(url: URL(string:"https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/pfizer-bioNTech-faqs.html")!),
+                                             label: {
+                                                Text("Pfizer")
+                                             }).padding()
+                            
+                        }
+                        
+                        
                     }
-                    Text("1 shot")
+                    
                 }
             }
-                    Button("Moderns") {
-                openURL(URL(string: "https://www.apple.com")!)
-                        
-            }
-                Text("28 days between 2 shots")
-                Button("Pfizer") {
-                openURL(URL(string: "https://www.apple.com")!)
-            }
-            Text("21 days between 2 shots")
             
-            
-            
+        }
         
-            
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    struct Eligibility_Previews: PreviewProvider {
+        static var previews: some View {
+            Eligibility()
         }
     }
     
-    
 }
-
-
-
-
-
-
-struct Eligibility_Previews: PreviewProvider {
-    static var previews: some View {
-        Eligibility()
-    }
-}
-
